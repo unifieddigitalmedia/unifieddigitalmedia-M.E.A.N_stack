@@ -1,0 +1,437 @@
+.company_logo {
+
+
+width:250px;
+
+height:150px;
+
+
+}
+
+
+header {
+
+text-align: center;
+
+
+
+}
+
+p {
+
+
+	color:grey;
+}
+
+
+section {
+
+margin: 0 auto;
+
+}
+
+.web_clients{
+
+list-style-type: square;
+
+line-height: 200%;
+
+}
+
+.paralax_tagline
+{
+
+ background-image:url("../images/skyscrapers_fog_black_and_white_59499_4000x3000.jpg");
+
+height:250px;
+
+
+
+
+color:white;
+
+ text-align: center;
+    letter-spacing: 1px;
+  
+    padding: 2em 10%;
+
+ background-repeat: no-repeat;
+
+background-size:cover;
+
+}
+
+.paralax_tagline h1 {vertical-align:middle; display: inline-block;font-size:300%;}
+
+.paralax_tagline::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.paralax_tagline h1::before {
+
+    content: '';
+    display: inline-block;
+    vertical-align: middle;  
+    height: 100%;
+
+}
+
+
+.container-fluid{
+
+
+
+padding:40px;
+
+}
+.paralax_services {
+
+text-align:center; 
+
+color:white; background-image:url("../images/blue_yellow_red_smoke_bg.jpg");
+
+height:250px;
+
+padding:20px;
+
+
+ background-repeat: no-repeat;
+
+background-size:cover;
+
+}
+
+
+.paralax_services h1 {vertical-align:middle; display: inline-block; height:100%;font-size:400%;}
+
+
+
+.paralax_services h1::before {
+
+    content: '';
+    display: inline-block;
+    vertical-align: middle;  
+    height: 100%;
+
+}
+
+
+.services_description{
+
+
+text-align:center;
+
+}
+.prevalent_trends{
+
+
+list-style-type: disc;
+
+line-height: 200%;
+
+}
+
+
+.management_process {
+
+
+list-style-type: decimal;
+
+line-height: 300%;
+
+}
+
+.dedicated_support_image{
+
+width:350px;
+height:250px;
+
+
+}
+
+.professional_service_image{
+
+width:350px;
+height:250px;
+
+}
+
+.powerful_features_image{
+
+width:350px;
+height:250px;
+
+}
+
+.w3-third{
+
+
+text-align: center;
+
+
+}
+
+.slider_image_1 {
+
+width:100%;
+
+height:500px;
+
+}
+
+
+
+.service_icon {
+
+    font-size:60px;
+    color:red;
+}
+
+
+
+.skills {
+
+
+list-style-type: none;
+
+
+
+}
+
+
+
+.myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+  margin-bottom:20px;
+}
+
+.myBar {
+  position: absolute;
+  width: 1%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+.label {
+    text-align: center; /* If you want to center it */
+    line-height: 30px; /* Set the line-height to the same as the height of the progress bar container, to center it vertically */
+    color: white;
+}
+
+
+footer{
+
+
+	padding:30px;
+	color:#e8e5e5;
+	background-color:#333333;
+	border-top:red solid thick;
+	border-bottom:black solid thin;
+}
+
+footer .text {
+
+	color:white;
+
+}
+
+
+
+.footer_title {
+
+padding-bottom:20px;
+border-bottom:black solid thin;
+
+}
+
+
+#send_button {
+
+background-color:black;
+color:white;
+border-radius: 0;
+border-color:black;
+}
+
+
+input[type=text],input[type=email] {
+
+
+background-color:black;
+border-color:black;
+color:#e8e5e5;
+border-radius: 0;
+
+
+}
+
+
+
+#message {  
+
+background-color:black;
+border-color:black;
+color:#e8e5e5;
+border-radius: 0;
+
+}
+
+
+
+
+input:focus {
+
+    border: blue medium solid;
+
+}
+
+
+.copywright{
+
+	
+	border-top:#333333 solid thin;
+	background-color:black;
+	text-align:center;
+	color:#e8e5e5;
+	padding:10px;
+}
+
+.resume_link {
+    color: #ff5a5a;
+}
+
+a { text-decoration: none;}
+
+
+a:link {
+    color: #ff5a5a;
+}
+
+
+a:visited {
+    color: blue;
+}
+
+
+a:hover {
+    color: #e8e5e5;
+}
+
+
+a:active {
+    color: blue;
+}
+
+* {box-sizing:border-box}
+body {margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  
+ 
+  position: absolute;
+  left:10%;
+  top: 25%;
+  font-size:400%;
+
+  color: white;
+
+}
+
+.text_subtitle {
+ 
+
+  position: absolute;
+  left:10%;
+  top:40%;
+ font-size:200%;
+  color: white;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide_fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slprev, .slnext,.text {font-size: 11px}
+}
