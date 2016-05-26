@@ -23,8 +23,6 @@ var app = express();
 
 app.use(compression());
 
-var port = process.env.PORT || 3000;
-
 app.use('/', express.static(__dirname + '/'));
 
 app.use(express.static('public'));
@@ -37,30 +35,12 @@ app.get('/', function (req, res) {
 
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 5000, function () {
 
-  console.log('Example app listening on port 3000!');
-
-});
-
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use(bodyParser.json());
-
-
-
-app.post('/api/queryLog/:name:email:subject:message', function (req, res) {
-
-  //res.send('POST request to the homepage');
-var name = req.body.email;
-
-var response = {"firstName":name, "lastName":"Doe"} ; 
- 
-  res.json(response);
+  console.log('Example app listening on port 5000!');
 
 });
+
 
 
 
