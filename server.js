@@ -78,9 +78,9 @@ var name = req.body.email;
     
     else console.log(response);
 
-var response = {"firstName":name, "lastName":"Doe"} ; 
+     var response = {"firstName":name, "lastName":"Doe"} ; 
  
-  res.json(response);
+    res.json(response);
 
 });
 
@@ -88,7 +88,7 @@ var response = {"firstName":name, "lastName":"Doe"} ;
 });
 
 
-});
+
 
 
 
