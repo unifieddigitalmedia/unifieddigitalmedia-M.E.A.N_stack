@@ -63,10 +63,10 @@ var name = req.body.email;
   mandrill('/messages/send', {
 
     message: {
-        to: [{email: 'udigitallondon@hotmail.com', name: 'Jim Rubenstein'}],
-        from_email: 'you@domain.com',
-        subject: "Hey, what's up?",
-        text: "Hello, I sent this message using mandrill."
+        to: [{email: 'udigitalmedia@hotmail.com', name: req.body.name}],
+        from_email: req.body.email,
+        subject: req.body.subject,
+        text: req.body.message
     }
 
 }, function(error, response)
