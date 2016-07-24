@@ -9,6 +9,9 @@ console.log = function(){
 */
 
 // Requires meanio .
+
+process.env.NODE_CONFIG_DIR = './config/env';
+
 var mean = require('meanio');
 
 var cluster = require('cluster');
@@ -41,6 +44,51 @@ app.listen(process.env.PORT || 5000, function () {
 
 });
 
+
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.json());
+
+
+
+var mandrill = require('node-mandrill')(process.env.MANDRILL_API);
+
+app.post('/api/queryLog/:name:email:subject:message', function (req, res) {
+
+var name = req.body.email;
+
+
+  mandrill('/messages/send', {
+
+    message: {
+        to: [{email: 'udigitalmedia@hotmail.com', name: 'Jim Rubenstein'}],
+        from_email: 'you@domain.com',
+        subject: "Hey, what's up?",
+        text: "Hello, I sent this message using mandrill."
+    }
+
+}, function(error, response)
+
+{
+    //uh oh, there was an error
+    if (error) console.log( JSON.stringify(error) );
+
+    
+    else console.log(response);
+
+var response = {"firstName":name, "lastName":"Doe"} ; 
+ 
+  res.json(response);
+
+});
+
+  
+});
+
+
+});
 
 
 

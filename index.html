@@ -745,7 +745,7 @@ var app = angular.module('unifieddigitalmedia', ['ngResource']);
 app.factory('Form_Service', ['$resource', function($resource) {
 
 
-var resource = $resource('http://localhost:3000/api/queryLog/:name:email:subject:message',{name:'@name',email:'@email',subject:'@subject',message:'@message'});
+var resource = $resource('http://www.unifieddigitalmedia.co.uk/api/queryLog/:name:email:subject:message',{name:'@name',email:'@email',subject:'@subject',message:'@message'});
 
 return resource;
 
