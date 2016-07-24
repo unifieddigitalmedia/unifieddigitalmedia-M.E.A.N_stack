@@ -745,7 +745,7 @@ var app = angular.module('unifieddigitalmedia', ['ngResource']);
 app.factory('Form_Service', ['$resource', function($resource) {
 
 
-var resource = $resource('http://www.unifieddigitalmedia.co.uk/api/queryLog/:name:email:subject:message',{name:'@name',email:'@email',subject:'@subject',message:'@message'});
+var resource = $resource('http://www.sinopiainn.com/api/queryLog/:name:email:subject:message',{name:'@name',email:'@email',subject:'@subject',message:'@message'});
 
 return resource;
 
@@ -758,13 +758,15 @@ app.controller('form_controller', function($scope,Form_Service) {
 
 $scope.contact_form_submission = function () {
 
-
-
-
-
 var log = Form_Service.save({name:$scope.name,email:$scope.email,subject:$scope.subject,message:$scope.message}, function() {
 
 
+alert('Thank you . Your message has been sent and will be responded to shortly.');
+
+$scope.name = "";
+$scope.email = "";
+$scope.subject = "";
+$scope.message = "";
   
   });
 
